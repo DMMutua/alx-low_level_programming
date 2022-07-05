@@ -5,7 +5,7 @@
  *
  * Return: 1 incase of a lowercase and 0 for otherwise
  */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
