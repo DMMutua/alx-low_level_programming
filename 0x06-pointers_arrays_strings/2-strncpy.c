@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * _strncpy - Copies a string to another String, behaving
  * exactly like the standard strncpy function
  * @src: the string to be copied from
