@@ -11,7 +11,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	if(NULL == destination || NULL == SOURCE)
+	if(NULL == dest || NULL == src)
 	{
 		return NULL;
 	}
