@@ -5,26 +5,25 @@
  * _strcat - appending the src string to the dest string
  * @dest: the destination string
  * @src: the source string
- * 
+ *
  * Return: Pointer to the new string
  */
 
 char *_strcat(char *dest, char *src)
 {
-	if(NULL == dest || NULL == src)
+	int dlen = 0, i;
+
+	while (dest[dlen])
 	{
-		return NULL;
+		dlen++
 	}
 
-	int index = 0, length = strlen(dest);
-
-	while(src[index] != '\0')
+	for (i = 0; src[i] != 0; i++)
 	{
-		dest[length] = src[index];
-		length++;
-		index++;
+		dest[dlen] = src[i];
+		dlen++;
 	}
 
-	dest[length] = '\0';
-	return dest;
+	dest[dlen] = '\0';
+	return (dest);
 }
