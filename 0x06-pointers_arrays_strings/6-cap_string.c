@@ -5,7 +5,7 @@
  * cap_string - Capitalizes all words of a string
  * @s: the string to be capitalized
  *
- * Return: char valie
+ * Return: char value
  */
 
 char *cap_string(char *s)
@@ -17,12 +17,15 @@ char *cap_string(char *s)
 	while (s[a])
 	{
 		i = 0;
+
 		while (i < cspc)
 		{
+
 			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] <= 122))
-				s[a] -= 32;
+			s[a] -= 32;
 			i++;
 		}
+
 		a++;
 	}
 
