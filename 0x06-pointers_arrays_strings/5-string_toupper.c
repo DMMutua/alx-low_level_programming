@@ -3,7 +3,6 @@
 /**
  * string_toupper - Changes all string lowers to uppers
  * @p: The string to be modified
- * 
  * Return: A string of characters
  */
 
