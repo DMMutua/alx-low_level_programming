@@ -25,11 +25,11 @@ int sqtChecker(int min, int max, int m)
 /*following a binary search;*/
 		if (guess * guess > m)
 		{
-			return(sqtChecker(min, guess - 1, m));
+			return (sqtChecker(min, guess - 1, m));
 		}
 		if (guess * guess < m)
 		{
-			return(sqtChecker(guess + 1, max, m));
+			return (sqtChecker(guess + 1, max, m));
 		}
 	}
 	return (-1);
