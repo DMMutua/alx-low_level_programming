@@ -3,8 +3,6 @@
 
 int factorial(int n)
 {
-	int res;
-
 	if (n < 0)
 	{
 		return (-1);
