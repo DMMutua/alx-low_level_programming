@@ -9,7 +9,7 @@
  */
 int primenumber(int n, int m)
 {
-	if (m == 1);
+	if (m == 1)
 	{
 		return (1);
 	}
