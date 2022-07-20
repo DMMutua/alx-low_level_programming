@@ -31,8 +31,8 @@ int sqtChecker(int min, int max, int m)
 		{
 			return(sqtChecker(guess + 1, max, m));
 		}
-		return (-1);
 	}
+	return (-1);
 }
 /**
  * _sqrt_recursion - finds the natural squareroot of a number
