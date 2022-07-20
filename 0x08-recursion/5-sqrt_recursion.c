@@ -31,7 +31,7 @@ int sqtChecker(int min, int max, int m)
 		{
 			return(sqtChecker(guess + 1, max, m));
 		}
-		return (-1)
+		return (-1);
 	}
 }
 /**
