@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-include "main.h"
+#include "main.h"
 
 /**
  * *create_array - creating an aray of characters
@@ -11,7 +11,7 @@ include "main.h"
  * Return: pointer to the array, NULL if error
  */
 
-char *_create_array(unsigned int size, char c);
+char *_create_array(unsigned int size, char c)
 {
 	char *p;
 	unsigned int i = 0;
