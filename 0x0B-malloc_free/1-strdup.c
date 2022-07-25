@@ -10,7 +10,7 @@
  *
  * Return: pointer to the copied string, NULL if error
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *dup;
 	unsigned int i, len;
