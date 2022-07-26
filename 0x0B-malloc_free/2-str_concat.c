@@ -3,7 +3,7 @@
 #include "main.h"
 
 /*
- * *str_concat - concatenates two strings and dynamically
+ * str_concat - concatenates two strings and dynamically
  * allocates memory to the result
  * @s1: the destination string
  * @s2: the source string
