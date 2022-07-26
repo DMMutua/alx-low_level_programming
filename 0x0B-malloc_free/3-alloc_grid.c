@@ -10,7 +10,7 @@
  * or NULL if error
  */
 
-int **aloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int i, j;
