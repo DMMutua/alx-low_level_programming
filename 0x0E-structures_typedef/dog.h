@@ -1,6 +1,9 @@
 #ifndef _HEADER_
 #define _HEADER_
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - a dog basic info
  * @name: First member
