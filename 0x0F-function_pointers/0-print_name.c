@@ -1,4 +1,4 @@
-#include "functpointers.h"
+#include "funcpointers.h"
 
 /**
  * print_name - prints name under different scenarios
