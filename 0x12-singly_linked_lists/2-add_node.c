@@ -30,7 +30,8 @@ list_t *add_node(list_t **head, const char *str)
 	return (0);
 }
 
-/**_strlen - Returns the length of a string
+/**
+ * _strlen - Returns the length of a string
  * @s: String to count
  *
  * Return: String Length
