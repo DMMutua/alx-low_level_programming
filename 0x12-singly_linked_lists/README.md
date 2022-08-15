@@ -25,4 +25,4 @@ A function that prints `You're beat! and yet, you must allow,`\n`I bore my house
 ### 101-hello_holberton.asm
 A 64-bit program in assembly that prints `Hello, Holberton`, followed by a new line.
 
-Written for the completion of an ALX Software Engineering Task[^note].
+Written for the completion of an ALX Software Engineering Task[^1].
