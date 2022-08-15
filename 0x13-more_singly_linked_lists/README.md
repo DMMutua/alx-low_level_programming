@@ -2,6 +2,13 @@
 
 #### Contains C-scripts that demonstrate the concepts of Singly-Linked Lists in the C language[^1].
 
+## ``listint_t`` Structure
+`` typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t; ``
+
 ## Scripts and Functions
 
 ### 0-print_listint.c
