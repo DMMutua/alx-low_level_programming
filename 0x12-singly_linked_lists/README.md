@@ -1,8 +1,8 @@
 # Singly Linked Lists
 
-#### Project containing C-scripts that demonstrate the concepts of Singly Linked Lists
+#### Project containing C-scripts that demonstrate the concepts of Singly Linked Lists[^1].
 
-##Scripts and Their Functions:
+## Scripts and Their Functions
 
 ### 0-print_list.c
 a function that prints all the elements of a list_t list.
@@ -25,4 +25,4 @@ A function that prints `You're beat! and yet, you must allow,`\n`I bore my house
 ### 101-hello_holberton.asm
 A 64-bit program in assembly that prints `Hello, Holberton`, followed by a new line.
 
-Written for the completion of an ALX Software Engineering Task[^1].
+[^1]: Written for the completion of an ALX Software Engineering Task.
