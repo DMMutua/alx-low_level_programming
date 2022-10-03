@@ -1,0 +1,33 @@
+#include "lists.h"
+
+/**
+ *  print_dlistint - prints all the elements of a
+ * dlistint_t list
+ *
+ * @h: head of the list
+ * Return: the number of nodes
+ */
+size_t print_dlistint(const dlistint_t *h)
+{
+	int node_count;
+
+	node_count = 0;
+
+	if (h == NULL)
+		return (count);
+
+	/*confirm header points to the origin node of the DL-list*/
+	while (h->prev != NULL)
+		h = h->prev;
+
+	/*Display nodes and add count*/
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		node_count++;
+		h = h->next;
+	}
+
+	return (count);
+}
+
