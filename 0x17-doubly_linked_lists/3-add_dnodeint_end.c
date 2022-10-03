@@ -16,12 +16,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	/*Dynamic Memory Allocation for new_node*/
 	new_node = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	if (new_node == NULL)
 		return (NULL);
 
 	/*Data loading to new_node*/
-	new_node->n;
-	new->next = NULL;
+	new_node->n = n;
+	new_node->next = NULL;
 
 	current_tailer = *head;
 
