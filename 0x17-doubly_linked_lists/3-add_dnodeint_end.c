@@ -12,6 +12,7 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *current_tailer;
+	dlistint_t *exchanger;
 	dlistint_t *new_node;
 
 	/*Dynamic Memory Allocation for new_node*/
@@ -30,6 +31,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		while (current_tailer->next != NULL)
 			current_tailer = current_tailer->next;
+		exchanger = current_tailer;
 		current_tailer = new_node;
 	}
 
@@ -40,7 +42,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 
 	/*backlinking new_node with previous tailer*/
-	new_node->prev = current_tailer;
+	new_node->prev = exchanger;
 
 	return (new_node);
 }
