@@ -13,15 +13,16 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int iterations = 0;
 
 	if (head != NULL)
-		/*Iterate and search for specific index*/
+		/*Iterate and search for specific_node at index and return it*/
 	{
-		while (current != NULL)
+		while (specific_node != NULL)
 		{
 			if (iterations == index)
 				return (specific_node);
 
 			specific_node = specific_node->next;
-			/*Increments 'iterations' before processing above statement*/
+
+			/*Increments 'iterations' before processing the loop again*/
 			++iterations;
 		}
 	}
