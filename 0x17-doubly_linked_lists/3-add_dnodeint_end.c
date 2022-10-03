@@ -11,38 +11,33 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *current_tailer;
-	dlistint_t *exchanger;
-	dlistint_t *new_node;
+	dlistint_t *current_tailer = NULL;
+	dlistint_t *new_node = NULL;
 
 	/*Dynamic Memory Allocation for new_node*/
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
-
-	/*Data loading to new_node*/
+	/*Loading element data to node*/
 	new_node->n = n;
-	new_node->next = NULL;
 
-	current_tailer = *head;
-
-	/*Traversing to the list tail and loading new_node*/
-	if (current_tailer != NULL)
+	/*Traversing to list end and loading new_node*/
+	if (*head)
 	{
+		current_tailer = *head;
+
 		while (current_tailer->next != NULL)
-			current_tailer = current_tailer->next;
-		exchanger = current_tailer;
-		current_tailer = new_node;
+			current_tailer = current->next;
+
+		new_node->next = NULL;
+		new_node->prev = current_tailer;
+		current_tailer->next = new_node;
+		return (new_node);
 	}
 
-	else
-		/*Adding new_node as first node incase the list is empty*/
-	{
-		*head = new_node;
-	}
+	new_node->next = *head;
+	new_node->prev = NULL;
+	*head = new_node;
 
-	/*backlinking new_node with previous tailer*/
-	new_node->prev = exchanger;
-
-	return (new_node);
+	return (*head);
 }
