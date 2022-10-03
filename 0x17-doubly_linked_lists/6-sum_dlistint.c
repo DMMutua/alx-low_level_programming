@@ -20,5 +20,5 @@ int sum_dlistint(dlistint_t *head)
 		}
 	}
 
-	return (list_data_sum)
+	return (list_data_sum);
 }
