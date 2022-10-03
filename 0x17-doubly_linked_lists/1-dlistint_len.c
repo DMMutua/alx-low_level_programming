@@ -9,12 +9,12 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	int element_no;
+	int element_count;
 
-	element_no = 0;
+	element_count = 0;
 
 	if (h == NULL)
-		return (element);
+		return (element_count);
 
 	/*Confirm h points to the origin node in DL-list*/
 	while (h->prev != NULL)
@@ -23,9 +23,9 @@ size_t dlistint_len(const dlistint_t *h)
 	/*Traverse list while adding element_no*/
 	while (h != NULL)
 	{
-		element_no++;
+		element_count++;
 		h = h->next;
 	}
 
-	return (element_no);
+	return (element_count);
 }
