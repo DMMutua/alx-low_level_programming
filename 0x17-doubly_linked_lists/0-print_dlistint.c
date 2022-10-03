@@ -14,13 +14,13 @@ size_t print_dlistint(const dlistint_t *h)
 	node_count = 0;
 
 	if (h == NULL)
-		return (count);
+		return (node_count);
 
 	/*confirm header points to the origin node of the DL-list*/
 	while (h->prev != NULL)
 		h = h->prev;
 
-	/*Display nodes and add count*/
+	/*Display elements and add count*/
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
@@ -28,6 +28,6 @@ size_t print_dlistint(const dlistint_t *h)
 		h = h->next;
 	}
 
-	return (count);
+	return (node_count);
 }
 
